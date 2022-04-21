@@ -141,7 +141,7 @@ func (k *OrderedClient) Apply(
 		args = append(args, "-o", format)
 	}
 	if dryRun {
-		args = append(args, "--dry-run")
+		args = append(args, "--dry-run=client")
 	}
 
 	if output {
